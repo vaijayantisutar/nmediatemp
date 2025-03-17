@@ -1,0 +1,592 @@
+<html>
+<head>
+    <title>i am page for making media query</title>
+</head>
+<style>
+    .container
+    {
+        width:100%;
+        min-height:400px;
+        border:1px solid black;
+    }
+    .header
+    {
+        width:100%;
+    min-height:100px;
+        display:flex;
+        border:1px solid yellow;
+
+    }
+    .logo
+    {
+flex-basis:30%;
+border:1px solid blue;
+ display:flex;
+
+
+    }
+    .logo .icon{
+        width:50%;
+      border:1px solid green;
+    }
+    .name{
+        flex-basis:50%;
+      border:1px solid black;
+    }
+    .name h1{
+        font-size:5em;
+        margin-top:-10px;
+        font-weight:300;
+    }
+    .menu
+    {
+        width:70%;
+        border:1px solid red;
+        display:flex;
+        flex-direction:column;
+
+    }
+    .menu ul{
+        list-style:none;
+    }
+    .menu ul li{
+        padding:10px;
+        display:inline-block;
+        
+    }
+.menu a{
+  color:black;
+  font-size:1.5em;
+  text-decoration:none;
+  text-transform:capitalize;
+}
+.menu a:hover{
+    background-color:burlywood;
+}
+.slider
+{
+    width:100%;
+    display:flex;
+    min-height:300px;
+    border:1px solid black;
+    
+    
+}
+.slider .box2 h1{
+margin-left:2%;
+}
+.slider .box2 h4{
+margin-left:2%;
+font-weight:400;
+}
+.slider .box1
+{
+    width:60%;
+    min-height:300px;
+    border:1px solid salmon;
+ background-image:url("D:/css program/images/camera.png");
+ background-size:100% 100%;
+}
+.box1 h1{
+    color:white;
+    font-size:4em;
+    margin-top:5%;
+    margin-left:2%;
+}
+.box1 h4{
+    color:white;
+    margin-left:2%;
+}
+.slider .box2
+{
+    width:40%;
+    min-height:300px;
+    border:1px solid blue;
+
+}
+
+.second-slider 
+{
+    width:100%;
+    min-height:300px;
+    border:1px solid black;
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+    
+}
+.second-slider .box3
+{
+    width:24%;
+    min-height:300px;
+   /* border:1px solid yellow;*/
+  
+}
+.second-slider .box
+{
+    width:23%;
+    min-height:300px;
+   /* border:1px solid yellow;*/
+
+}
+.second-slider .box3 h1{
+   margin-left:2%;
+
+}
+.second-slider .box3 h5{
+    font-weight:300;
+    margin-left:2%;
+}
+.second-slider .box{
+  background-color:lightgray;
+  border-bottom-left-radius:20px;
+}
+.second-slider .box{
+  background-color:lightgray;
+  border-bottom-left-radius:20px;
+}
+.second-slider .box{
+  background-color:lightgray;
+  border-bottom-left-radius:20px;
+}
+.box h1{
+    margin-left:2%;
+    font-size:2.3em;
+    color:darkblue;
+
+}
+.box h5{
+    margin-left:2%;
+    font-weight:400;
+}
+.box h2{
+    margin-left:2%;
+}
+.third-slider
+{
+    width:100%;
+    min-height:300px;
+    border:1px solid black;
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+}
+.third-slider .box4
+{
+    width:24%;
+    min-height:300px;
+    border:1px solid blue;
+    
+}
+.third-slider .box5 img{
+    width:100%;
+    height:100%;
+}
+.third-slider .box5
+{
+    width:23%;
+    min-height:300px;
+    border:1px solid yellow;
+
+}
+.box4 h1{
+    margin-left:2%;
+}
+.box4 h5
+{
+    margin-left:2%;
+}
+.fourth-slider
+{
+    width:100%;
+    min-height:300px;
+    border:1px solid black;
+    display:flex;
+    margin-top:30px;
+}
+.fourth-slider .box6
+{
+    width:24%;
+    min-height:300px;
+    border:1px solid blue;
+    
+ 
+}
+.box6 h1
+{
+    margin-left:2%;
+
+}
+.box6 h5{
+    margin-left:2%;
+    font-weight:400;
+}
+.fourth-slider .box7
+{
+    width:76%;
+    min-height:300px;
+    border:1px solid yellow;
+
+}
+.box7 h1{
+    margin-left:2%;
+}
+.box7 h3{
+    margin-left:2%;
+}
+.box7 h5{
+    margin-left:2%;
+    font-weight:500;
+}
+.footer
+{
+ width:100%;
+ min-height:300px;
+ border:1px solid black;
+ display:flex;
+ justify-content: space-between;
+ background-color:black;
+ margin-top:30px;
+}
+.footer .box8
+{
+    width:24%;
+    min-height:300px;
+    border:1px solid blue;
+    
+}
+.footer ul{
+    list-style:none;
+}
+.footer ul li{
+    margin-top:20px;
+
+}
+.footer ul li a{
+    text-decoration:none;
+    color:white;
+}
+.footer h1{
+    margin-left:2%;
+    color:white;
+}
+.footer .box8 h5{
+    color:white;
+    margin-left:2%;
+}
+.box8 a{
+    margin-left:2%;
+}
+.box8 h3{
+color:white;
+margin-left:2%;
+}
+.box8 h6{
+    color:white;
+    margin-left:2%;
+}
+/*@media only screen and (max-width:1040px)
+{
+    .header{
+        width:100%;
+        flex-direction:column;
+
+    }
+    .menu{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    }
+ 
+   /* .second-slider
+    {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: space-between;
+    }
+    .second-slider .box3{
+      width:48%;
+      
+    }
+    .second-slider .box{
+      width:48%;
+      
+    }
+    .footer 
+    {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .footer .box8{
+        width:45%;
+      
+    flex-direction:column;
+    }
+
+}*/
+@media only screen and (max-width:500px)
+{
+   
+    .header{
+        flex-direction:column;
+        width: 100%;
+       
+    }
+    .header .logo
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+    .logo .icon
+    {
+        width: 100%;
+    }
+    .menu{
+     
+         width: 100%;
+        /* display: flex;*/
+         flex-direction: column;
+    }
+    .menu ul li {
+       width: 100%;
+    }
+    .slider
+    {
+        width:100%;
+        flex-direction:column;
+    }
+   .slider .box1
+   {
+    width:100%;
+   background-size:100% 100%;
+   }
+ /*  .box1 h1
+   {
+    width:100%;
+   }
+   
+   .box1 h4
+   {
+    width:100%;
+   }*/
+   .slider .box2{
+    width:100%;
+
+   }
+   .second-slider 
+   {
+    width:100%;
+    flex-direction:column;
+   }
+   .second-slider .box
+   {
+       width:100%;
+   }
+   .second-slider .box3{
+    width:100%;
+   }
+   .third-slider 
+   {
+    flex-direction:column;
+    width:100%;
+   }
+  .third-slider .box4{
+    width:100%;
+    
+
+  }
+  .third-slider .box5{
+    width:100%;
+
+  }
+  .fourth-slider 
+  {
+    width:100%;
+    flex-direction:column;
+  }
+  .fourth-slider .box6{
+    width:100%;
+
+  }
+  .fourth-slider .box7{
+    width:100%;
+  }
+  .footer{
+    width:100%;
+    flex-direction:column;
+  }
+  .footer .box8{
+    width:100%;
+  }
+  
+}
+
+
+</style>
+<body>
+    <div class="container">
+    <div class="header">
+      <div class="logo">
+            <div class="icon">
+             <img src="D:\css program\images\java.png">
+
+            </div>
+            <div class="name">
+                <h1>KING</h1>
+            </div>
+      </div>
+      <div class="menu">
+       <ul>
+        <li><a href="">Menu</a></li>
+        <li><a href="">Page</a></li>
+        <li><a href="">Gallery</a></li>
+     
+        <li><a href="">Blog</a></li>
+        <li><a href="">Contact</a></li>
+        
+       </ul>
+      </div>
+    </div>
+    <div class="slider">
+    <div class="box1">
+        
+  <h1>DIGITAL NATURE</h1>
+  <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis sunt nulla pariatur repellat dolorum iusto illum repellendus est nobis?</h4>
+    </div>
+    <div class="box2">
+      <h1>PROJECT TITLE</h1>
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Iste culpa provident eligendi delectus Iste culpa provident eligendi delectus recusandae iure beatae molestias, esse accusantium vero omnis velit similique quidem qui aspernatur assumenda impedit. Soluta, excepturi.</h4>
+    <h4>View Details</h4>    
+</div>
+    </div>
+    
+    <div class="second-slider">
+     <div class="box3">
+         <h1>SERVICES</h1>
+         <h5>-> Lorem ipsum dolor sit amet.</h5>
+        <hr></hr>
+        <h5>-> Lorem ipsum dolor sit amet.</h5>
+        <hr></hr>
+        <h5>-> Lorem ipsum dolor sit amet.</h5>
+        <hr></hr>
+        <h5>-> Lorem ipsum dolor sit amet.</h5>
+        
+     </div>
+     <div class="box">
+        <h1>DIGITAL</h1>
+        <h2>Pellentewiut habitant orbi technique</h2>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur deleniti reiciendis similique repellendus porro vel quas eaque earum velit alias eos quis numquam at maxime aut nobis eius consectetur, cumque ab iure, reprehenderit dicta voluptate! Ad consequuntur iusto magnam!</h5>
+     
+
+     </div>
+     <div class="box">
+        <h1>PRINT</h1>
+        <h2>Pellentewiut habitant orbi technique</h2>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur deleniti reiciendis similique repellendus porro vel quas eaque earum velit alias eos quis numquam at maxime aut nobis eius consectetur, cumque ab iure, reprehenderit dicta voluptate! Ad consequuntur iusto magnam!</h5>
+     
+     </div>
+     <div class="box">
+        <h1>MOTION</h1>
+        <h2>Pellentewiut habitant orbi technique</h2>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequuntur deleniti reiciendis similique repellendus porro vel quas eaque earum velit alias eos quis numquam at maxime aut nobis eius consectetur, cumque ab iure, reprehenderit dicta voluptate! Ad consequuntur iusto magnam!</h5>
+     
+     </div>
+
+    </div>
+
+    <div class="third-slider">
+     <div class="box4">
+     <h1>PROJECTS</h1>
+     <hr></hr>
+    <h5>view all></h5>
+     </div>
+     <div class="box5">
+        <img src="D:/css program/images/creation.png">
+     </div>
+     <div class="box5">
+        <img src="D:\css program\images\m.png">
+       
+     </div>
+     <div class="box5">
+        <img src="D:\css program\images\explore.png">
+     </div>
+     
+
+    </div>
+<div class="fourth-slider">
+<div class="box6">
+    <h1>ABOUT US</h1>
+    <h5>-> Lorem ipsum dolor sit amet.</h5>
+   <hr></hr>
+   <h5>-> Lorem ipsum dolor sit amet.</h5>
+   <hr></hr>
+   <h5>-> Lorem ipsum dolor sit amet.</h5>
+   <hr></hr>
+   <h5>-> Lorem ipsum dolor sit amet.</h5>
+</div>
+<div class="box7">
+    <h1>PROFILE</h1>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, vero.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque vitae cum ullam error ratione officiis. Ratione in necessitatibus delectus maxime.</h3>
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, fugit veniam? Blanditiis molestias esse ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, beatae! Optio ducimus, in saepe delectus maiores accusantium. Debitis, inventore est accusantium tempore impedit corrupti ullam numquam voluptate, harum soluta sapiente recusandae modi!</h5>
+   <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, aliquam ipsam? Praesentium pariatur ea eveniet dolorum molestias? Aliquid aspernatur sint deleniti provident, dignissimos, natus ab autem ea mollitia dolorum delectus inventore quis? Voluptas, quis? Temporibus, odit debitis. Dolor asperiores libero labore quae, dicta dolores numquam recusandae amet enim odit est ullam eum! Architecto placeat reprehenderit repellendus quas Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, necessitatibus!fugiat earum non minus maiores, ea perferendis aut magni neque quia dolorem doloribus?</h5>
+</div>
+</div>
+
+<div class="footer">
+<div class="box8">
+    <h1>NAVIGATION</h1>
+
+
+    <ul><li><a href="">Home</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">Gallery</a></li>
+    <li><a href="">Page</a></li>
+    <li><a href="">Contact</a></li>
+    </ul>
+    
+</div>
+<div class="box8">
+    
+    <h1>BLOG POSTS</h1>
+    <h5>Collaboration easy and productive everydayMakingCollaboration easy and productive everydayMaking</h5>
+    <h5>Collaboration easy and productive everydayMakingCollaboration easy and productive everydayMaking</h5>
+    <h5>like follow share</h5>
+    
+    
+
+</div>
+<div class="box8">
+    <h1>TWITTER</h1>
+    <h5>Collaboration easy and productive everydayMakingCollaboration easy and productive everydayMaking</h5>
+    <a href="#">https://wotuwohjwtowuj</a><br>
+    <h5>Collaboration easy and productive everydayMakingCollaboration easy and productive everydayMaking</h5>
+
+
+</div>
+<div class="box8">
+    <h1>Contact</h1>
+<h6>The company name inc thoehotu nwohtn kavala naka rod,kolhapur</h6>
+<h3>+3397410140</h3>
+<h3>+3397410140</h3>
+<h6>vsutar@gmail.com</h6>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+    </div>
+</body>
